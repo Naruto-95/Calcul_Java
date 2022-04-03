@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-
+private CalculatorMode calculatorMode;//приязавл класс к активити
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,8 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.plus,
                 R.id.minus,
                 R.id.exactly,
-                R.id.multip,
-                R.id.devision
+                R.id.multip
 
         };
     }
