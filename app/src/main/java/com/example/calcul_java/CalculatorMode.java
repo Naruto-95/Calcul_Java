@@ -24,6 +24,7 @@ public class CalculatorMode {
      public void onReactionNum(int button){
          if (state == State.resultinpunt){
              state = State.firstArginput;
+             inputStr.setLength(0);
          }
 
 
@@ -109,6 +110,11 @@ public class CalculatorMode {
 
          }
      }
+     }
+     public void reset(){
+         state = State.firstArginput;
+         inputStr.setLength(0);
+
      }
 //Вывод текста
      public String getText(){

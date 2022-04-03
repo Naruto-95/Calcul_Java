@@ -62,5 +62,15 @@ for (int i = 0; i < numberID.length;i++){
         for (int i = 0; i < numberActions.length;i++){
             findViewById(numberActions[i]).setOnClickListener(actionsButtonClickLustener);
         }
+
+
+        findViewById(R.id.resut).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                calculatorMode.reset();
+                textView.setText(calculatorMode.getText());
+
+            }
+        });
     }
 }

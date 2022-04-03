@@ -12,35 +12,45 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/input_"
         android:gravity="right|center"
         android:textSize="@dimen/TextSize" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_below="@+id/Text">
+        android:layout_below="@+id/Text"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/one"
-                android:text="@string/_1"
-               style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_1" />
+
             <Button
                 android:id="@+id/two"
-                android:text="@string/_2"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_2" />
+
             <Button
                 android:id="@+id/three"
-                android:text="@string/_3"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_3" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,18 +58,24 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/forr"
-                android:text="@string/_4"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_4" />
+
             <Button
                 android:id="@+id/five"
-                android:text="@string/_5"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_5" />
+
             <Button
                 android:id="@+id/six"
-                android:text="@string/_6"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_6" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,18 +83,24 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/saven"
-                android:text="@string/_7"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_7" />
+
             <Button
                 android:id="@+id/eight"
-                android:text="@string/_8"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_8" />
+
             <Button
                 android:id="@+id/nine"
-                android:text="@string/_9"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_9" />
         </LinearLayout>
 
         <LinearLayout
@@ -86,41 +108,50 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <View
-                android:visibility="invisible"
-                style="@style/cul_btn"/>
+                style="@style/cul_btn"
+                android:visibility="invisible" />
+
             <Button
                 android:id="@+id/zero"
-                android:text="@string/_0"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/_0" />
+
             <View
-                android:visibility="invisible"
-                style="@style/cul_btn"/>
+                style="@style/cul_btn"
+                android:visibility="invisible" />
         </LinearLayout>
 
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/plus"
-                android:text="@string/plus"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/plus" />
+
             <Button
                 android:id="@+id/minus"
-                android:text="@string/min"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/min" />
 
             <Button
                 android:id="@+id/exactly"
-                android:text="@string/rav"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/rav" />
 
         </LinearLayout>
 
@@ -129,17 +160,24 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/multip"
-                android:text="@string/ym"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/ym" />
+
             <Button
                 android:id="@+id/devision"
-                android:text="@string/del"
-                style="@style/cul_btn"/>
-            <View
-                android:visibility="invisible"
-                style="@style/cul_btn"/>
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="@string/del" />
+
+            <Button
+                android:id="@+id/resut"
+                android:background="@drawable/ic_btn"
+                style="@style/cul_btn"
+                android:text="C" />
         </LinearLayout>
 
     </LinearLayout>
