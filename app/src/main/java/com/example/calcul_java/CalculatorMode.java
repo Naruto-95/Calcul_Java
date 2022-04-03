@@ -3,7 +3,7 @@ package com.example.calcul_java;
 public class CalculatorMode {
     private int firstArg;
     private int secondArg;
-private int actionsSelect; // Переменная в которой хронятся действия пользователя
+
     StringBuilder inputStr = new StringBuilder();
      private State state;
 //инициализация полей
@@ -13,6 +13,9 @@ private int actionsSelect; // Переменная в которой хроня�
          resultinpunt
 
      }
+
+
+    private int actionSelected; // Переменная в которой хронятся действия пользователя
 // конструктор
      public CalculatorMode(){
          state = State.firstArginput;
@@ -24,7 +27,7 @@ private int actionsSelect; // Переменная в которой хроня�
          }
 
 
-         if (inputStr.length() > 9){//Больше 10 чисел не вводить
+         if (inputStr.length() < 9){//Больше 10 чисел не вводить
              switch (button){
                  case R.id. zero:
                      if (inputStr.length() != 0){//Если первое число введено не 0, то 0 можно вводить
@@ -33,22 +36,31 @@ private int actionsSelect; // Переменная в которой хроня�
                      break;
                  case R.id. one:
                      inputStr.append("1");
+                     break;
                  case R.id. two:
                      inputStr.append("2");
+                     break;
                  case R.id. three:
                      inputStr.append("3");
+                     break;
                  case R.id. forr:
                      inputStr.append("4");
+                     break;
                  case R.id. five:
                      inputStr.append("5");
+                     break;
                  case R.id. six:
                      inputStr.append("6");
+                     break;
                  case R.id. saven:
                      inputStr.append("7");
+                     break;
                  case R.id. eight:
                      inputStr.append("8");
+                     break;
                  case R.id. nine:
                      inputStr.append("9");
+                     break;
 
              }
          }
@@ -56,30 +68,47 @@ private int actionsSelect; // Переменная в которой хроня�
      }
      //вывод
      public void onDevision(int devision){
-         if (devision == R.id.devision && state == State.secondArginput){
+         if (devision == R.id.exactly && state == State.secondArginput ) {
+             secondArg = Integer.parseInt(inputStr.toString());
+             state = State.resultinpunt;
+             inputStr.setLength(0);
+             switch (actionSelected) {
+                 case R.id.plus:
+                     inputStr.append(firstArg + secondArg);
+                     break;
+                 case R.id.minus:
+                     inputStr.append(firstArg - secondArg);
+                     break;
+                 case R.id.multip:
+                     inputStr.append(firstArg * secondArg);
+                     break;
+                 case R.id.devision:
+                     inputStr.append(firstArg / secondArg);
+                     break;
 
-         }else if (inputStr.length() > 0 && state == State.firstArginput){
+
+             }
+         } else if (inputStr.length() > 0 && state == State.firstArginput ){
              firstArg = Integer.parseInt(inputStr.toString());
              state = State.secondArginput;
-         }
+             inputStr.setLength(0);
+
          switch (devision){
              case R.id.plus:
-                 actionsSelect = R.id.plus;
+                 actionSelected = R.id.plus;
                  break;
              case R.id.minus:
-                 actionsSelect = R.id.minus;
+                 actionSelected = R.id.minus;
                  break;
              case R.id.multip:
-                 actionsSelect = R.id.multip;
-                 break;
-             case R.id.exactly:
-                 actionsSelect = R.id.exactly;
+                 actionSelected = R.id.multip;
                  break;
              case R.id.devision:
-                 actionsSelect = R.id.devision;
+                 actionSelected = R.id.devision;
                  break;
-         }
 
+         }
+     }
      }
 //Вывод текста
      public String getText(){

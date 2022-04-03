@@ -30,10 +30,9 @@ private CalculatorMode calculatorMode;//приязавл класс к акти�
         int numberActions [] = new int[]{
                 R.id.plus,
                 R.id.minus,
-                R.id.exactly,
+                R.id.devision,
                 R.id.multip,
-                R.id.devision
-
+                R.id.exactly
         };
 
         textView= findViewById(R.id.Text);//инитиализирова текствью
