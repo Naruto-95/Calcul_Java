@@ -31,12 +31,15 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/one"
                 android:text="@string/_1"
                style="@style/cul_btn"/>
             <Button
+                android:id="@+id/two"
                 android:text="@string/_2"
                 style="@style/cul_btn"/>
             <Button
+                android:id="@+id/three"
                 android:text="@string/_3"
                 style="@style/cul_btn"/>
         </LinearLayout>
@@ -47,12 +50,15 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/forr"
                 android:text="@string/_4"
                 style="@style/cul_btn"/>
             <Button
+                android:id="@+id/five"
                 android:text="@string/_5"
                 style="@style/cul_btn"/>
             <Button
+                android:id="@+id/six"
                 android:text="@string/_6"
                 style="@style/cul_btn"/>
         </LinearLayout>
@@ -63,12 +69,15 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/saven"
                 android:text="@string/_7"
                 style="@style/cul_btn"/>
             <Button
+                android:id="@+id/eight"
                 android:text="@string/_8"
                 style="@style/cul_btn"/>
             <Button
+                android:id="@+id/nine"
                 android:text="@string/_9"
                 style="@style/cul_btn"/>
         </LinearLayout>
@@ -82,6 +91,7 @@
                 android:visibility="invisible"
                 style="@style/cul_btn"/>
             <Button
+                android:id="@+id/zero"
                 android:text="@string/_0"
                 style="@style/cul_btn"/>
             <View
@@ -100,13 +110,16 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/plus"
                 android:text="@string/plus"
                 style="@style/cul_btn"/>
             <Button
+                android:id="@+id/minus"
                 android:text="@string/min"
                 style="@style/cul_btn"/>
 
             <Button
+                android:id="@+id/exactly"
                 android:text="@string/rav"
                 style="@style/cul_btn"/>
 
@@ -118,9 +131,11 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/multip"
                 android:text="@string/ym"
                 style="@style/cul_btn"/>
             <Button
+                android:id="@+id/devision"
                 android:text="@string/del"
                 style="@style/cul_btn"/>
             <View
